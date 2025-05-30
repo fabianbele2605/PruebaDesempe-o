@@ -105,7 +105,7 @@ video {
 
 footer {
     background-color: black;
-    color: rgb(10, 187, 10);
+    color: rgb(212, 238, 95);
     height: 50px;
     padding: 1%;
     font-size: larger;
@@ -113,25 +113,25 @@ footer {
 }
 
 img {
-    background-color: rgb(10, 187, 10);
+    background-color: whitesmoke;
     margin-left: 20px;
     display: flex;
     width: 50px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 25px;
   
 }
 
 .iframe {
     display: flex;
     justify-content: space-between;
-    color: rgb(10, 187, 10);
+    color: rgb(212, 238, 95);
     padding: 0%;
 }
 
 
 button {
-    color: rgb(10, 187, 10);
+    color: rgb(212, 238, 95);
     font-size: large;
     font-style: italic;
     border: none;
@@ -139,18 +139,7 @@ button {
 }
 
 button:hover{
-    border: 2px solid green;
+    border: 2px solid rgb(212, 238, 95);
     border-radius: 20px;
     box-shadow: 0 7px rgba(87, 199, 133, .1);
-}
-
-.degra {
-    color: aliceblue;
-    background: #157696;
-    background: linear-gradient(90deg, rgba(21, 118, 150, 1) 0%, rgba(87, 199, 133, 1) 68%, rgba(242, 219, 5, 1) 100%);
-    border-radius: 35%;
-}
-
-.botonpy {
-    color: aliceblue;
 }
