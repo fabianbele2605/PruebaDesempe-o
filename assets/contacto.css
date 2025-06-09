@@ -91,3 +91,27 @@ a {
 .container-form .btn-enviar:hover{
     background: #e39403;
 }
+
+
+/* Responsive layout for tablets and smaller screens */
+@media (max-width: 768px) {
+    .vista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+    section {
+        max-width: 80px;
+        margin: 0;
+    }
+}
+
+/* Responsive layout for small mobile screens */
+@media (max-width: 420px) {
+    .vista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2vw;
+    }
+   
+}
