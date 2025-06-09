@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../assets/contacto.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">Exit</a> <!-- Link to return to the beginning -->
+    </header>
+    <!-- Main form container -->
+    <div class="container-form">
+        <!-- Contact information (left side) -->
+        <div class="info-form">
+            <h2>Contáctanos</h2> <!-- Section title -->
+            <p>Nuestra pagina de contacto es el lugar perfecto para hacernos saber como podemos ayudarte. Puedes enviarnos un mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+            <a href="#"><i class="fa fa-phone"></i> 321-456-4747</a>
+            <a href="#"><i class="fa fa-envelope"></i> fabianweb@gmail.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Barranquilla</a>
+        </div>
+        <!-- Contact form (right side)-->
+        <form action="#" autocomplete="off">
+            <!-- Name field -->
+            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+             <!-- Email field (there is a typo here) -->
+            <input type="email" name="email" placeholder="Tu Email" class="campo">
+            <!-- Field for cell phone number -->
+            <input type="number" name="celular" placeholder="Tu Numero de celular" class="campo">
+            <!-- Message field -->
+            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+            <!-- Submit button -->
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+</body>
+</html>

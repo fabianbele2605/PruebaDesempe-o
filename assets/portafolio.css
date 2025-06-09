@@ -1,0 +1,115 @@
+/* Apply font to all elements */
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Header styling */
+header {
+    background-color: rgb(7, 7, 7);  /* Dark background for header */
+    height: 40px; /* Fixed height */
+    justify-content: center; 
+    font-size: 26px; /* Large text size */
+    line-height: 30px; /* Vertical alignment of text */
+    display: flex;  /* Flex layout */
+    justify-content: space-between; /* Space between items */
+    padding: 10px;  /* Padding around content */
+}
+
+
+/* Body background color */
+body {
+    background: rgb(10, 10, 10);
+}
+
+/* Unordered list: use content display, removes default layout */
+ul {
+    display: contents;
+    justify-content: space-between;
+}
+
+/* List items: no visual block; centers items */
+li {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation bar: flex layout with spacing between links */
+nav {
+    display: flex;
+    padding: 0px;
+    gap: 10px;  /* Space between nav items */
+}
+
+/* Link styling: no underline, light text color */
+a {
+    text-decoration: none;
+    color: rgba(234, 238, 217, 0.849);
+    margin-left: 20px;
+}
+
+/* Main content area: horizontal layout with spacing */
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+/* Section title inside a section: slight left margin */
+section h2 {
+    margin-left: 10px;
+}
+
+/* Section container: styled card with padding and shadow */
+section {
+    max-width: 200px;
+    margin: 0%;
+    padding: 40px 20px;
+    background-color: rgb(226, 225, 225);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Generic image styling */
+img {
+    height: 50px;
+    width: 50px;
+}
+
+/* This selector is incorrect: `.link` is a class on the image, not a descendant */
+img .link {
+    width: 10px;
+    height: 1px;
+}
+
+/* Specific class for large cover image */
+.portada {
+    height: 200px;
+    width: 200px;
+}
+
+/* Responsive layout for tablets and smaller screens */
+@media (max-width: 768px) {
+    .vista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+    section {
+        max-width: 80px;
+        margin: 0;
+    }
+}
+
+/* Responsive layout for small mobile screens */
+@media (max-width: 420px) {
+    .vista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2vw;
+    }
+   
+}

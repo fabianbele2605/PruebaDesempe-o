@@ -1,38 +1,45 @@
-/* Estilo del encabezado */
+/* Header style */
 header {
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(7, 7, 7); /* Dark background */
     height: 40px;
-    justify-content: center;
+    justify-content: center; /* Center items horizontally */
     font-size: 26px;
     line-height: 30px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Use flex layout */
+    justify-content: space-between; /* Distribute space between child elements */
     padding: 10px;
 }
 
+/* Reset and style for unordered list */
 ul {
-    display: contents;
+    display: contents; /* Remove box, keep children */
     justify-content: space-between;
 }
 
+/* Style for list items */
 li {
     display: contents;
     justify-content: center;
     align-items: center;
 }
 
-/* estilo de la barra de navegacion */
+/* Navigation bar style */
 nav {
     display: flex;
     padding: 0px;
-    gap: 10px;
+    gap: 10px; /* Space between items */
 }
 
+/* General body style */
 body {
-    display: contents;
-    justify-content: center;
-    margin: 0;
-    line-height: inherit;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    display: grid; /* Use grid layout */
+    margin: 0; 
+    min-height: 100dvh; /* Full viewport height */
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    
 }
 
 ul {
@@ -40,13 +47,14 @@ ul {
     margin-right: 30px;
 }
 
+/* Link style */
 a {
     text-decoration: none;
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     margin-left: 20px;
 }
 
-/* estilo de la clase de promo, que es la del continido que esta centrada en el video */
+/* Style for promo section (centered content over video) */
 .promo {
     display: flex;
     flex-direction: column;
@@ -58,25 +66,25 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    backdrop-filter: blur(10px);
-
-
+    transform: translate(-50%, -50%); /* Center element */
+    z-index: 2; /* On top of video */
+    backdrop-filter: blur(10px); /* Blur background */
 }
 
+/* Heading style */
 h2 {
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     font-style: italic;
 }
 
+/* Paragraph style */
 p {
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     font-size: large;
     font-style: italic;
 }
 
-/* es la clase que contiene los otras dos clases que contiene el video y el conenido de texto */
+/* Container for video and text content */
 .hero {
     min-height: 100vh;
     position:relative;
@@ -84,18 +92,18 @@ p {
 
 }
 
-/* estilo del video que insertamos en el html */
+/* Video style */
 video {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;  /* Cover container */
 
 }
 
-
+/* Overlay layer on top of the video */
 .capa {
     position: absolute;
     top: 0;
@@ -107,17 +115,17 @@ video {
     mix-blend-mode: overlay;
 }
 
-/* estilo de pie de pagina */
+/* Footer style */
 footer {
     background-color: black;
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     height: 50px;
     padding: 1%;
     font-size: larger;
     font-style: italic;
 }
 
-/* estilo de imagenes */
+/* Image style */
 img {
     background-color: whitesmoke;
     margin-left: 20px;
@@ -128,25 +136,44 @@ img {
   
 }
 
-/* estilo de la clase que le da la poxixon y colores de la seccion de redes sociales */
+/* Style for section with social media or iframes */
 .iframe {
     display: flex;
     justify-content: space-between;
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     padding: 0%;
 }
 
-
+/* Button style */
 button {
-    color: rgb(212, 238, 95);
+    color: rgba(234, 238, 217, 0.849);
     font-size: large;
     font-style: italic;
     border: none;
     background-color: transparent;
 }
 
+/* Button hover effect */
 button:hover{
-    border: 2px solid rgb(212, 238, 95);
+    border: 2px solid rgba(234, 238, 217, 0.849);
     border-radius: 20px;
     box-shadow: 0 7px rgba(87, 199, 133, .1);
+}
+
+/* Responsive layout for screens up to 768px */
+@media (max-width: 768px) {
+    .vista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+}
+
+/* Responsive layout for screens up to 420px */
+@media (max-width: 420px) {
+    .vista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2vw;
+    }
 }

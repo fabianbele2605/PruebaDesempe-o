@@ -3,73 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título que aparece en la pestaña del navegador -->
-    <title>CampoExpress</title>
-    <!-- Enlace al archivo CSS para estilos -->
+    <!-- Title that appears in the browser tab -->
+    <title>Fabian Web</title>
+    <!-- Link to CSS file for styles -->
     <link rel="stylesheet" href="./assets/index.css">
 </head>
-<!-- Cuerpo del documento - todo el contenido visible -->
+<!-- Document body - all visible content -->
 <body>
     <header>
-        <!-- Encabezado de la página -->
-        <a href="./index.html">CampoExpress</a>
-        <!-- Barra de navegación principal -->
+        <!-- Page Header -->
+        <a href="./index.html">Fabian Web</a>
+        <!-- Main navigation bar -->
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <!--AL darle click salimos de la pagina y volvemos al login-->
-                <li><a href="./login.html">Exit</a></li>
+                <li><a href="./secciones/portafolio.html">Portafolio</a></li>
+                <li><a href="./secciones/contacto.html">Contactos</a></li>
             </ul>
         </nav>
     </header>
-     <!-- Contenido principal de la página -->
+     <!-- Main content of the page -->
     <main>
-        <!--esta es la setcion de agricultores -->
-        <section>
+        <!--This is the section that links to my personal presentation -->
+        <section class="vista">
         <div class="hero">
         <div class="promo">
-            <h2>Quieres Ayudar a Nuestro Agricultores. </h2>
-            <p>Aqui puedes conocer y comprar sus productos agricolas 🥬​🍉​🍊​🍌​🍍​🌽​🥕​🥔​</p>
-            <!--Aqui al darle click no enlaza nada -->
-            <button type="submit"><a href="./index.html" target="_blank">Quiero Conocer y comprar ⭐​</a></button>
+            <h2>Quieres conocer mi perfil personal. </h2>
+            <p>Aqui puedes conocer sobre mi.​</p>
+            <!--Here when you click it, it links to a new page called presentation -->
+            <button type="submit"><a href="./secciones/presentacion.html" target="_blank">Quiero conocer de ti.​</a></button>
         </div>
-        <!--Aqui insertamos nuestro video de fondo-->
+        <!--Here we insert our background video-->
         <video id="video-fondo" muted autoplay loop>
-            <source src="./img/3365440-uhd_3840_2160_30fps.mp4"
+            <source src="./img/852421-hd_1920_1080_30fps.mp4"
             type="video/mp4">
         </video>
         <div class="capa"></div>
         </div>
         </section>
-        <!--esta es la setcion de ganaderos-->
-        <section>
+        <!--This is the section that links to my personal portfolio-->
+        <section class="vista">
             <div class="hero">
             <div class="promo">
-                <h2>Quieres Ayudar a Nuestros Ganaderos. </h2>
-                <p>Aqui puedes conocer y comprar sus productos pecuarios 🐓​🐖​🐄​</p>
-                <!--Aqui al darle click se quedara en la misma pagina,porque ya lo demas es otro proyecto propio mio-->
-                <button type="submit"><a href="./index.html">Quiero conocer y comprar ⭐​</a></button>
+                <h2>Quieres conocer mi portafolio personal. </h2>
+                <p>Aqui puedes conocer y ver mi proyectos personal​</p>
+                <!--Here when you click it, it links to a page called portfolio-->
+                <button type="submit"><a href="./secciones/portafolio.html" target="_blank">Quiero conocer tu portafolio​</a></button>
             </div>
-            <!--Aqui insertamos un segundo video de la setcion de ganaderos-->
+            <!--Here we insert a second video from the portfolio section-->
             <video muted autoplay loop>
-                <source src="./img/4196251-hd_1920_1080_24fps.mp4" type="video/mp4">
+                <source src="./img/video2.mp4" type="video/mp4">
             </video>
             </div>
         </section> 
     </main>
-    <!-- Pie de página -->
+    <!-- Footer -->
     <footer>
         <div class="iframe">
-            <!-- Sección de redes sociales -->
+            <!-- Social Media Section -->
             <h3>Nuestros Canales</h3>
-            <!--Aqui no enlaze ninguna red social-->
+            <!--No social network links here-->
             <img src="./img/Twitter_X.png" alt="X">
             <img src="./img/facebook.png" alt="Facebook">
             <img src="./img/Instagram_logo_2022.svg.png" alt="Instagram">
         </div>
     </footer>
-    <!--Aqui importamos el archivo js para que cumpal la condicion de login.html y pase a este index.html-->
-    <script src="./js/login.js"></script>
 </body>
 </html>
